@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: graphql
+  datasource:
+    url: jdbc:postgresql://localhost:5432/portfolio
+    username: portfolio
+    password: wo2oRt@oliord
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  graphql:
+    graphiql:
+      enabled: true # /graphiql 경로로 접근하면 웹 브라우저에서 GraphQL API를 테스트 할 수 있다.
+    schema:
+      printer:
+        enabled: true
